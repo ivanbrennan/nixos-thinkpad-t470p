@@ -47,6 +47,7 @@
     mkpasswd
     par
     pstree
+    slack
     tmux
     tree
     universal-ctags
@@ -54,6 +55,8 @@
     xcape
     xclip
   ];
+
+  nixpkgs.config.allowUnfree = true;
 
   fonts.fonts = [
     pkgs.source-code-pro
