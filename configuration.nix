@@ -45,6 +45,7 @@
     ghc
     git
     global
+    lastpass-cli
     lshw
     mkpasswd
     networkmanager_openvpn
