@@ -41,6 +41,7 @@
     aspellDicts.en
     chromium
     emacs
+    ghc
     git
     global
     lshw
@@ -48,6 +49,7 @@
     par
     pstree
     slack
+    stack
     tmux
     tree
     universal-ctags
