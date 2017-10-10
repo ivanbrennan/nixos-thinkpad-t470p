@@ -43,9 +43,12 @@
     emacs
     git
     global
+    lshw
     mkpasswd
     par
+    pstree
     tmux
+    tree
     universal-ctags
     vimHugeX
     xcape
