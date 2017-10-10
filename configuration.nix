@@ -41,6 +41,7 @@
     git
     mkpasswd
     vimHugeX
+    xclip
   ];
 
   nix.gc.automatic = true;
