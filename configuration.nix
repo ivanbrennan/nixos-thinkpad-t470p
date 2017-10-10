@@ -45,8 +45,10 @@
     ghc
     git
     global
+    kubernetes
     lastpass-cli
     lshw
+    minikube
     mkpasswd
     networkmanager_openvpn
     par
