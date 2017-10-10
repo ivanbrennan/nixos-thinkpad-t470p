@@ -47,6 +47,7 @@
     global
     lshw
     mkpasswd
+    networkmanager_openvpn
     par
     pstree
     slack
