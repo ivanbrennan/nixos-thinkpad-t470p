@@ -54,6 +54,7 @@
     tree
     universal-ctags
     vimHugeX
+    vlc
     xcape
     xclip
   ];
