@@ -37,12 +37,24 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
+    aspell
+    aspellDicts.en
     chromium
+    emacs
     git
+    global
     mkpasswd
+    par
+    tmux
+    universal-ctags
     vimHugeX
     xcape
     xclip
+  ];
+
+  fonts.fonts = [
+    pkgs.source-code-pro
+    pkgs.emacs-all-the-icons-fonts
   ];
 
   nix.gc.automatic = true;
@@ -58,6 +70,8 @@
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
+
+  services.emacs.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
