@@ -51,6 +51,7 @@
     lshw
     minikube
     mkpasswd
+    mongodb
     networkmanager_openvpn
     par
     pstree
