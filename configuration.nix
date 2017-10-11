@@ -95,6 +95,7 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
+  networking.extraHosts = "192.168.99.100 eureka";
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
