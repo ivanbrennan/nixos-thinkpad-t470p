@@ -41,6 +41,7 @@
     aspell
     aspellDicts.en
     chromium
+    conntrack_tools
     docker
     emacs
     ghc
