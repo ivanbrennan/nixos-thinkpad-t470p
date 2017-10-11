@@ -98,20 +98,20 @@
   # services.printing.enable = true;
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.layout = "us";
-  services.xserver.xkbOptions = "caps:ctrl_modifier,shift:both_capslock";
+  services.xserver = {
+    enable = true;
+    layout = "us";
+    xkbOptions = "caps:ctrl_modifier,shift:both_capslock";
+    autoRepeatDelay = 200;
+    autoRepeatInterval = 30;
 
-  # Enable touchpad support.
-  services.xserver.libinput.enable = true;
+    # Enable touchpad support.
+    libinput.enable = true;
 
-  # Enable the KDE Desktop Environment.
-  # services.xserver.displayManager.sddm.enable = true;
-  # services.xserver.desktopManager.plasma5.enable = true;
-
-  services.xserver.desktopManager = {
-    gnome3.enable = true;
-    default = "gnome3";
+    desktopManager = {
+      gnome3.enable = true;
+      default = "gnome3";
+    };
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
