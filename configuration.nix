@@ -55,6 +55,7 @@
     networkmanager_openvpn
     par
     pstree
+    redis
     slack
     stack
     tmux
