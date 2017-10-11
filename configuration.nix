@@ -59,6 +59,7 @@
     tmux
     tree
     universal-ctags
+    virtualbox
     vimHugeX
     vlc
     xcape
@@ -123,6 +124,7 @@
     extraGroups = [
       "docker"
       "networkmanager"
+      "vboxusers"
       "wheel"
       ];
     hashedPassword = "$6$qWuhkYKaol$kZGBevpOUgsyXID3hZshrrXmUxBXzNX5clP6vUfKP/ze0hd34aWfpl7gJs/20dDhgRQyq1n2wdmOcUkDGye3u0";
@@ -137,5 +139,7 @@
   system.autoUpgrade.enable = true;
 
   virtualisation.docker.enable = true;
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.headless = true;
 
 }
