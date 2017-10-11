@@ -46,6 +46,7 @@
     ghc
     git
     global
+    jq
     kubernetes
     lastpass-cli
     lshw
