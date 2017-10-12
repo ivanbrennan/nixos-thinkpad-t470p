@@ -37,6 +37,9 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
+    python27Packages.cffi
+    python27Packages.cryptography
+    python27Packages.setuptools
     ag
     aspell
     aspellDicts.en
@@ -44,12 +47,14 @@
     conntrack_tools
     docker
     emacs
+    gcc
     ghc
     git
     global
     jq
     kubernetes
     lastpass-cli
+    libffi
     lshw
     minikube
     mkpasswd
@@ -57,20 +62,24 @@
     networkmanager_openvpn
     par
     pstree
+    python27
     redis
     slack
     stack
+    # sumall_cli
     tmux
     tree
     universal-ctags
     virtualbox
     vimHugeX
     vlc
+    wget
     xcape
     xclip
   ];
 
   nixpkgs.config.allowUnfree = true;
+  # nixpkgs.config.packageOverrides = (import ./package-overrides);
 
   fonts.fonts = [
     pkgs.source-code-pro
