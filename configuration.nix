@@ -67,7 +67,7 @@
     vimHugeX
     vlc
     xcape
-    xclip
+    xsel
   ];
 
   nixpkgs.config.allowUnfree = true;
